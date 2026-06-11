@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Study Buddy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>📚 AI Study Buddy</h1>
+        <p>Your Intelligent Learning Assistant</p>
+    </div>
+
+    <div class="chat-card">
+
+        <h2>🤖 Ask AI</h2>
+
+        <textarea
+        id="question"
+        placeholder="Ask anything about your studies..."></textarea>
+
+        <button onclick="askAI()">
+            Ask AI
+        </button>
+
+        <div id="loading"></div>
+
+        <div id="answer"></div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="feature-card">
+
+            <h2>📝 Notes Summarizer</h2>
+
+            <textarea
+            id="notes"
+            placeholder="Paste your notes here..."></textarea>
+
+            <button onclick="summarizeNotes()">
+                Generate Summary
+            </button>
+
+            <div id="summaryResult"></div>
+
+        </div>
+
+        <div class="feature-card">
+
+            <h2>❓ Quiz Generator</h2>
+
+            <input
+            type="text"
+            id="quizTopic"
+            placeholder="Enter topic">
+
+            <button onclick="generateQuiz()">
+                Generate Quiz
+            </button>
+
+            <div id="quizResult"></div>
+
+        </div>
+
+    </div>
+
+    <div class="feature-card planner">
+
+        <h2>📅 Study Planner</h2>
+
+        <input
+        type="text"
+        id="subject"
+        placeholder="Subject Name">
+
+        <input
+        type="date"
+        id="examDate">
+
+        <button onclick="createPlan()">
+            Create Study Plan
+        </button>
+
+        <div id="planResult"></div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

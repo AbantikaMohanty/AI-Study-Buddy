@@ -22,7 +22,7 @@ async function askAI() {
     try{
 
         const response = await fetch(
-           "https://ai-study-buddy-backend-ocsa.onrender.com/",
+           "https://ai-study-buddy-backend-ocsa.onrender.com/api/ask",
             {
                 method:"POST",
                 headers:{
